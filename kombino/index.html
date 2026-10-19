@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombino - Gizlilik Politikası / Privacy Policy</title>
+    <style>
+:root {
+    --bg-dark: #0a0f18;
+    --card-bg: rgba(22, 34, 47, 0.95);
+    --border-gold: #ffcc00;
+    --text-primary: #f0f4f8;
+    --text-muted: #94a3b8;
+    --accent-gold: #ffd700;
+    --accent-cyan: #38bdf8;
+    --accent-red: #ef4444;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px 12px;
+}
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 204, 0, 0.35);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7), 0 0 25px rgba(255, 204, 0, 0.15);
+}
+@media (max-width: 600px) {
+    .container { padding: 20px 16px; border-radius: 12px; }
+    h1 { font-size: 1.5rem !important; }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-logo {
+    font-size: 2rem;
+}
+.brand-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+}
+.brand-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+.nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.nav-btn {
+    text-decoration: none;
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+    background: var(--accent-gold);
+    color: #000;
+    border-color: var(--accent-gold);
+}
+.lang-switch {
+    display: inline-flex;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    overflow: hidden;
+}
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.lang-btn.active {
+    background: var(--accent-gold);
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    border-bottom: 1px dashed rgba(255,204,0,0.3);
+    padding-bottom: 6px;
+}
+p {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 14px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+li { margin-bottom: 6px; }
+strong { color: #f1f5f9; }
+.highlight-box {
+    background: rgba(255, 204, 0, 0.08);
+    border-left: 4px solid var(--accent-gold);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.danger-box {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 4px solid var(--accent-red);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.info-box {
+    background: rgba(56, 189, 248, 0.08);
+    border-left: 4px solid var(--accent-cyan);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 36px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    gap: 12px;
+}
+.footer a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+.footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">
+                <span class="brand-logo">🀄</span>
+                <div>
+                    <div class="brand-title">KOMBİNO</div>
+                    <div class="brand-sub">Zera Game Lab</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="privacy.html" class="nav-btn active">Gizlilik / Privacy</a>
+                <a href="terms.html" class="nav-btn">Koşullar / Terms</a>
+                <a href="delete-account.html" class="nav-btn">Hesap Silme / Delete</a>
+            </div>
+            <div class="lang-switch">
+                <button id="btn-tr" class="lang-btn active" onclick="switchLang('tr')">TR</button>
+                <button id="btn-en" class="lang-btn" onclick="switchLang('en')">EN</button>
+            </div>
+        </header>
+
+        <!-- TÜRKÇE İÇERİK -->
+        <main class="lang-tr">
+            <h1>Gizlilik Politikası</h1>
+            <p><em>Son Güncelleme: 18 Ekim 2026</em></p>
+
+            <div class="highlight-box">
+                <strong>Özet Güvence:</strong> Kombino, kullanıcı gizliliğine mutlak saygı duyar. Oyunu oynamak için kişisel kimlik (T.C. No, ad-soyad, telefon) zorunlu değildir. E-posta adresi isteğe bağlı olarak sadece hesap kurtarma amacıyla alınır. Verileriniz asla üçüncü taraflara satılmaz veya kiralanmaz.
+            </div>
+
+            <h2>1. Genel Bilgilendirme ve Kapsam</h2>
+            <p>Zera Game Lab ("Biz", "Geliştirici") olarak Kombino ("Oyun", "Uygulama") oyuncularımızın kişisel verilerinin korunmasına büyük önem veriyoruz. Bu Gizlilik Politikası; 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR), California Tüketici Gizliliği Yasası (CCPA) ve Google Play / Apple App Store geliştirici politikalarına tam uyumlu olarak hazırlanmıştır.</p>
+
+            <h2>2. Toplanan Bilgiler ve Toplama Amaçları</h2>
+            <p>Oyun deneyiminizi sağlamak, seviyenizi ve başarılarınızı korumak amacıyla yalnızca aşağıdaki veriler işlenir:</p>
+            <ul>
+                <li><strong>Anonim Cihaz Tanımlayıcısı (Anonim UUID):</strong> Oyun ilerlemenizi güvenle bulutta saklamak, birden fazla cihazınız arasında senkronizasyon sağlamak ve çok oyunculu eşleşmeyi yürütmek için kullanılır.</li>
+                <li><strong>Cihaz ve Teknik Veriler:</strong> Cihaz modeli, işletim sistemi sürümü ve ekran çözünürlüğü (oyun içi grafik ölçekleme, performans optimizasyonu ve çökme tespiti amacıyla).</li>
+                <li><strong>Oyun İstatistikleri ve İlerleme:</strong> Seviye, kupa sayısı, sanal altın, enerji, kalkan, çapa jetonları ve maç geçmişi.</li>
+                <li><strong>Profil Bilgileri:</strong> Oyun içinde oyuncunun kendi belirlediği takma ad (DisplayName) ve seçilen avatar simgesi.</li>
+                <li><strong>İsteğe Bağlı Kurtarma E-postası:</strong> Kullanıcı cihazını değiştirdiğinde veya kaybettiğinde hesabını kurtarabilmek için kendi rızasıyla e-posta adresi bağlayabilir. Bu e-posta yalnızca güvenli hesap kurtarma amacıyla kullanılır; hiçbir reklam/pazarlama e-postası gönderilmez ve üçüncü taraflarla paylaşılmaz.</li>
+            </ul>
+
+            <h2>3. Üçüncü Taraf Servisler ve SDK'lar</h2>
+            <p>Kombino, güvenilir ve endüstri standardı altyapı sağlayıcıları ile çalışır:</p>
+            <ul>
+                <li><strong>Google Cloud Firestore:</strong> Oyun verilerinin uçtan uca şifreli bulut sunucularında yedekli saklanması.</li>
+                <li><strong>Google AdMob:</strong> İsteğe bağlı ödüllü video reklam gösterimleri. Reklam tercihleri cihaz ayarlarınızdan yönetilebilir; aile politikalarına uygun ve çocuk dostu reklam filtreleri aktiftir.</li>
+                <li><strong>Google Play Billing &amp; Apple StoreKit (Uygulama İçi Satın Alma):</strong> Satın alımlar doğrudan Google ve Apple altyapısı üzerinden işlenir. Kombino hiçbir kredi kartı veya banka ödeme bilgisini görmez, toplamaz ve saklamaz.</li>
+            </ul>
+
+            <h2>4. Veri ve Hesap Silme Hakkı (KVKK / GDPR / Store Uyumluluğu)</h2>
+            <p>Tüm oyuncularımız diledikleri an hesaplarını ve toplanan tüm verilerini kalıcı olarak sildirme hakkına sahiptir:</p>
+            <ul>
+                <li><strong>Uygulama İçinden Anında Silme:</strong> Ayarlar ekranındaki <strong>"Verilerimi Sil"</strong> butonuna tıklayarak hesabınızı ve tüm bulut kayıtlarınızı saniyeler içinde kalıcı olarak yok edebilirsiniz.</li>
+                <li><strong>Web / E-posta Üzerinden Silme:</strong> Oyunu cihazınızdan kaldırmış olsanız dahi, <a href="delete-account.html" style="color:var(--accent-gold);">Hesap Silme Sayfamız</a> üzerinden veya <strong>zera.game.lab@gmail.com</strong> adresine e-posta göndererek silme talebinde bulunabilirsiniz. Talepler 30 gün içinde tamamlanır.</li>
+            </ul>
+            <div class="danger-box">
+                <strong>Önemli Uyarı:</strong> Hesap silme işlemi geri alınamaz. Silinen hesaplara ait tüm seviyeler, sanal bakiyeler ve satın alımlar kalıcı olarak yok edilir; dijital içerik mevzuatı gereğince geri ödeme yapılmaz.
+            </div>
+
+            <h2>5. Çocukların Gizliliği (COPPA)</h2>
+            <p>Kombino genel kitleye yönelik bir aile ve zeka oyunudur. 13 yaşından küçük çocuklardan bilerek herhangi bir kişisel kimlik verisi toplanmaz. Ebeveynler çocuklarına ait verilerin silinmesi için bizimle iletişime geçebilir.</p>
+
+            <h2>6. İletişim</h2>
+            <p>Gizlilik politikamız ve veri haklarınızla ilgili her türlü soru için: <strong style="color:var(--accent-gold);">zera.game.lab@gmail.com</strong></p>
+        </main>
+
+        <!-- ENGLISH CONTENT -->
+        <main class="lang-en" style="display:none;">
+            <h1>Privacy Policy</h1>
+            <p><em>Last Updated: October 18, 2026</em></p>
+
+            <div class="highlight-box">
+                <strong>Privacy Guarantee:</strong> Kombino respects your privacy. Personally identifiable information is not required to play. An optional recovery email may be provided solely for account restoration. Your data is never sold or rented to third parties.
+            </div>
+
+            <h2>1. Overview and Scope</h2>
+            <p>Zera Game Lab ("We", "Us", "Developer") is committed to protecting the privacy of Kombino ("Game", "App") players. This Privacy Policy complies with the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), the Children's Online Privacy Protection Act (COPPA), and Google Play / Apple App Store developer policies.</p>
+
+            <h2>2. Information Collected and Purposes</h2>
+            <p>To provide smooth gameplay, secure progression in the cloud, and diagnose technical issues, only the following data is processed:</p>
+            <ul>
+                <li><strong>Anonymous Device Identifier (UUID):</strong> Used to securely maintain your game state in cloud databases and enable cross-device synchronization.</li>
+                <li><strong>Technical Telemetry:</strong> Device model, operating system version, screen resolution, and crash reports (used for layout responsiveness and bug diagnosis).</li>
+                <li><strong>Gameplay Statistics:</strong> Levels, trophy counts, virtual gold, energy, shields, checkpoint tokens, and match history.</li>
+                <li><strong>Profile Details:</strong> Your custom player display name and chosen avatar icon.</li>
+                <li><strong>Optional Recovery Email:</strong> If voluntarily provided, used strictly to generate secure account recovery links. Never used for marketing or sold to third parties.</li>
+            </ul>
+
+            <h2>3. Third-Party Services &amp; SDKs</h2>
+            <p>Our game integrates trusted, industry-standard third-party providers:</p>
+            <ul>
+                <li><strong>Google Cloud Firestore:</strong> Encrypted cloud database storage and real-time state synchronization.</li>
+                <li><strong>Google AdMob:</strong> Optional rewarded video ads. Personalized ad preferences can be managed via device OS settings; strict family-friendly filtering applies.</li>
+                <li><strong>Google Play Billing &amp; Apple StoreKit:</strong> All in-app purchases are handled directly by Google and Apple. Kombino does not collect or store credit card numbers or financial details.</li>
+            </ul>
+
+            <h2>4. Account &amp; Data Deletion Rights</h2>
+            <p>You have the absolute right to permanently delete your account and all associated cloud data at any time:</p>
+            <ul>
+                <li><strong>In-App Deletion:</strong> Tap <strong>"Delete My Data"</strong> in the in-game Settings menu to immediately and irreversibly destroy your account records.</li>
+                <li><strong>Web / Email Request:</strong> If you uninstalled the application, submit a request via our <a href="delete-account.html" style="color:var(--accent-gold);">Account Deletion Page</a> or email <strong>zera.game.lab@gmail.com</strong>. Deletion requests are processed within 30 days.</li>
+            </ul>
+            <div class="danger-box">
+                <strong>Notice:</strong> Account deletion is permanent and irreversible. All levels, virtual assets, and purchases will be permanently erased with no entitlement to refund.
+            </div>
+
+            <h2>5. Children's Privacy (COPPA)</h2>
+            <p>Kombino is suitable for general audiences. We do not knowingly collect personal data from children under 13. Parents may contact us to request the deletion of any associated data.</p>
+
+            <h2>6. Contact Us</h2>
+            <p>For questions or data deletion requests, contact: <strong style="color:var(--accent-gold);">zera.game.lab@gmail.com</strong></p>
+        </main>
+
+        <footer class="footer">
+            <div>© 2026 Zera Game Lab. All rights reserved.</div>
+            <div>
+                <a href="privacy.html">Gizlilik / Privacy</a> | 
+                <a href="terms.html">Koşullar / Terms</a> | 
+                <a href="delete-account.html">Hesap Silme / Delete</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-tr').forEach(el => el.style.display = lang === 'tr' ? 'block' : 'none');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    localStorage.setItem('kombino_legal_lang', lang);
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('kombino_legal_lang') || 'tr';
+    switchLang(saved);
+});
+</script>
+</body>
+</html>

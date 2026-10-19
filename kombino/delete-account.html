@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombino - Hesap ve Veri Silme Talebi / Account Deletion</title>
+    <style>
+:root {
+    --bg-dark: #0a0f18;
+    --card-bg: rgba(22, 34, 47, 0.95);
+    --border-gold: #ffcc00;
+    --text-primary: #f0f4f8;
+    --text-muted: #94a3b8;
+    --accent-gold: #ffd700;
+    --accent-cyan: #38bdf8;
+    --accent-red: #ef4444;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px 12px;
+}
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 204, 0, 0.35);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7), 0 0 25px rgba(255, 204, 0, 0.15);
+}
+@media (max-width: 600px) {
+    .container { padding: 20px 16px; border-radius: 12px; }
+    h1 { font-size: 1.5rem !important; }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-logo {
+    font-size: 2rem;
+}
+.brand-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+}
+.brand-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+.nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.nav-btn {
+    text-decoration: none;
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+    background: var(--accent-gold);
+    color: #000;
+    border-color: var(--accent-gold);
+}
+.lang-switch {
+    display: inline-flex;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    overflow: hidden;
+}
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.lang-btn.active {
+    background: var(--accent-gold);
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    border-bottom: 1px dashed rgba(255,204,0,0.3);
+    padding-bottom: 6px;
+}
+p {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 14px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+li { margin-bottom: 6px; }
+strong { color: #f1f5f9; }
+.highlight-box {
+    background: rgba(255, 204, 0, 0.08);
+    border-left: 4px solid var(--accent-gold);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.danger-box {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 4px solid var(--accent-red);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.info-box {
+    background: rgba(56, 189, 248, 0.08);
+    border-left: 4px solid var(--accent-cyan);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 36px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    gap: 12px;
+}
+.footer a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+.footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">
+                <span class="brand-logo">🀄</span>
+                <div>
+                    <div class="brand-title">KOMBİNO</div>
+                    <div class="brand-sub">Zera Game Lab</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="privacy.html" class="nav-btn">Gizlilik / Privacy</a>
+                <a href="terms.html" class="nav-btn">Koşullar / Terms</a>
+                <a href="delete-account.html" class="nav-btn active">Hesap Silme / Delete</a>
+            </div>
+            <div class="lang-switch">
+                <button id="btn-tr" class="lang-btn active" onclick="switchLang('tr')">TR</button>
+                <button id="btn-en" class="lang-btn" onclick="switchLang('en')">EN</button>
+            </div>
+        </header>
+
+        <!-- TÜRKÇE İÇERİK -->
+        <main class="lang-tr">
+            <h1>Hesap ve Veri Silme Talebi</h1>
+            <p><em>Google Play ve Apple App Store Veri Güvenliği Standartlarına Uygun Hesap Silme Prosedürü</em></p>
+
+            <div class="info-box">
+                <strong>Hızlı Silme (Uygulama İçi):</strong> Oyun yüklüyse, <strong>Lobi &gt; Ayarlar ⚙️ &gt; Verilerimi Sil 🗑️</strong> yolunu izleyerek hesabınızı anında kendiniz silebilirsiniz.
+            </div>
+
+            <h2>Web / E-posta Üzerinden Silme Talebi</h2>
+            <p>Oyunu cihazınızdan kaldırdıysanız veya uygulamaya erişemiyorsanız, verilerinizin silinmesi için aşağıdaki adımları izleyebilirsiniz:</p>
+
+            <ol>
+                <li>E-posta adresinizden <strong>zera.game.lab@gmail.com</strong> adresine bir e-posta gönderin.</li>
+                <li>E-posta konusuna <strong>"Kombino Hesap Silme Talebi"</strong> yazın.</li>
+                <li>E-posta içeriğinde varsa <strong>Kombino Kurtarma Kodunuzu (örn: KMB-xxx-xxx)</strong> veya oyun içindeki <strong>Oyuncu Takma Adınızı (DisplayName)</strong> belirtin.</li>
+            </ol>
+
+            <h2>Hangi Veriler Silinir?</h2>
+            <p>Talebiniz doğrulandığında bulut sunucularımızdan aşağıdaki tüm kayıtlar kalıcı olarak imha edilir:</p>
+            <ul>
+                <li>Hesabınıza bağlı tüm profiller ve oyuncu takma isimleri,</li>
+                <li>Bulutta saklanan seviye ilerlemesi, kupa sayısı, lig derecesi ve maç geçmişi,</li>
+                <li>Varsa hesabınıza kayıtlı kurtarma e-postası ve cihaz kimlik eşleşmeleri,</li>
+                <li>Tüm sanal bakiyeler (Altın, Enerji, VIP, Kalkan, Çapa jetonları).</li>
+            </ul>
+
+            <div class="danger-box">
+                <strong>Dikkat:</strong> Hesap silme işlemi kalıcı ve geri alınamazdır. Silinen sanal ürünler veya ilerlemeler geri getirilemez ve ücret iadesi yapılmaz.
+            </div>
+
+            <h2>İşlem Süresi</h2>
+            <p>E-posta ile iletilen hesap ve veri silme talepleri, güvenlik doğrulamasının ardından en geç <strong>30 takvim günü</strong> içinde tamamen gerçekleştirilir.</p>
+        </main>
+
+        <!-- ENGLISH CONTENT -->
+        <main class="lang-en" style="display:none;">
+            <h1>Account and Data Deletion Request</h1>
+            <p><em>Official Deletion Procedure Compliant with Google Play &amp; Apple App Store Guidelines</em></p>
+
+            <div class="info-box">
+                <strong>Instant In-App Deletion:</strong> If you have the game installed, open <strong>Lobby &gt; Settings ⚙️ &gt; Delete My Data 🗑️</strong> to immediately and permanently erase your account.
+            </div>
+
+            <h2>Deletion Request via Web / Email</h2>
+            <p>If you have uninstalled Kombino or cannot access the app, you may request permanent deletion of your account and records by following these steps:</p>
+
+            <ol>
+                <li>Send an email from your personal address to <strong>zera.game.lab@gmail.com</strong>.</li>
+                <li>Use the subject line: <strong>"Kombino Account Deletion Request"</strong>.</li>
+                <li>In the email body, provide your <strong>Kombino Recovery Code (e.g., KMB-xxx-xxx)</strong> or your in-game <strong>Player Display Name</strong>.</li>
+            </ol>
+
+            <h2>What Data Will Be Deleted?</h2>
+            <p>Upon verification, all of the following data is permanently purged from our cloud servers:</p>
+            <ul>
+                <li>All user profiles and player display names associated with the account,</li>
+                <li>All cloud-saved progression, level milestones, trophy counts, and match history,</li>
+                <li>Any associated recovery email address and device identifiers,</li>
+                <li>All virtual assets (Gold, Energy, VIP memberships, Shields, Checkpoint tokens).</li>
+            </ul>
+
+            <div class="danger-box">
+                <strong>Warning:</strong> Deletion is irreversible. Deleted progression and digital items cannot be restored, and no refunds will be provided.
+            </div>
+
+            <h2>Processing Time</h2>
+            <p>Manual deletion requests submitted via email are verified and completed within <strong>30 calendar days</strong>.</p>
+        </main>
+
+        <footer class="footer">
+            <div>© 2026 Zera Game Lab. All rights reserved.</div>
+            <div>
+                <a href="privacy.html">Gizlilik / Privacy</a> | 
+                <a href="terms.html">Koşullar / Terms</a> | 
+                <a href="delete-account.html">Hesap Silme / Delete</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-tr').forEach(el => el.style.display = lang === 'tr' ? 'block' : 'none');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    localStorage.setItem('kombino_legal_lang', lang);
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('kombino_legal_lang') || 'tr';
+    switchLang(saved);
+});
+</script>
+</body>
+</html>

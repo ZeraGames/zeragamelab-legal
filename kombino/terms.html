@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombino - Kullanım Koşulları / Terms of Service</title>
+    <style>
+:root {
+    --bg-dark: #0a0f18;
+    --card-bg: rgba(22, 34, 47, 0.95);
+    --border-gold: #ffcc00;
+    --text-primary: #f0f4f8;
+    --text-muted: #94a3b8;
+    --accent-gold: #ffd700;
+    --accent-cyan: #38bdf8;
+    --accent-red: #ef4444;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px 12px;
+}
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 204, 0, 0.35);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7), 0 0 25px rgba(255, 204, 0, 0.15);
+}
+@media (max-width: 600px) {
+    .container { padding: 20px 16px; border-radius: 12px; }
+    h1 { font-size: 1.5rem !important; }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-logo {
+    font-size: 2rem;
+}
+.brand-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    letter-spacing: 1px;
+}
+.brand-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+.nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.nav-btn {
+    text-decoration: none;
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+    background: var(--accent-gold);
+    color: #000;
+    border-color: var(--accent-gold);
+}
+.lang-switch {
+    display: inline-flex;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    overflow: hidden;
+}
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.lang-btn.active {
+    background: var(--accent-gold);
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+h2 {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    border-bottom: 1px dashed rgba(255,204,0,0.3);
+    padding-bottom: 6px;
+}
+p {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 14px;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+li { margin-bottom: 6px; }
+strong { color: #f1f5f9; }
+.highlight-box {
+    background: rgba(255, 204, 0, 0.08);
+    border-left: 4px solid var(--accent-gold);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.danger-box {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 4px solid var(--accent-red);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.info-box {
+    background: rgba(56, 189, 248, 0.08);
+    border-left: 4px solid var(--accent-cyan);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+}
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 36px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    gap: 12px;
+}
+.footer a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+}
+.footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand">
+                <span class="brand-logo">🀄</span>
+                <div>
+                    <div class="brand-title">KOMBİNO</div>
+                    <div class="brand-sub">Zera Game Lab</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="privacy.html" class="nav-btn">Gizlilik / Privacy</a>
+                <a href="terms.html" class="nav-btn active">Koşullar / Terms</a>
+                <a href="delete-account.html" class="nav-btn">Hesap Silme / Delete</a>
+            </div>
+            <div class="lang-switch">
+                <button id="btn-tr" class="lang-btn active" onclick="switchLang('tr')">TR</button>
+                <button id="btn-en" class="lang-btn" onclick="switchLang('en')">EN</button>
+            </div>
+        </header>
+
+        <!-- TÜRKÇE İÇERİK -->
+        <main class="lang-tr">
+            <h1>Kullanım Koşulları</h1>
+            <p><em>Son Güncelleme: 18 Ekim 2026</em></p>
+
+            <h2>1. Koşulların Kabulü ve Yaş Şartı</h2>
+            <p>Kombino oyununu indirerek, kurarak veya kullanarak bu Kullanım Koşullarını ("Koşullar") kabul etmiş sayılırsınız. 13 yaşından küçüklerin oyunu ebeveyn veya yasal vasi gözetimi ve onayı ile oynaması gerekmektedir.</p>
+
+            <h2>2. Sınırlı Kullanım Lisansı</h2>
+            <p>Zera Game Lab, oyuncuya kişisel, ticari olmayan, devredilemez, alt lisans verilemez ve geri alınabilir bir oyun oynama lisansı sunar. Oyunun tüm kaynak kodları, grafikleri, mekanikleri, sesleri ve ticari markaları Zera Game Lab'in fikri mülkiyetindedir.</p>
+
+            <h2>3. Sanal Varlıklar, Satın Almalar ve Kesin İade Politikası (No-Refund)</h2>
+            <div class="danger-box">
+                <strong>Önemli Hukuki Bildirim:</strong> Oyun içinde satın alınan veya kazanılan hiçbir sanal ürünün (Altın, Enerji, VIP, Kalkan, Çapa) gerçek dünyada parasal karşılığı yoktur ve iade edilemez.
+            </div>
+            <ul>
+                <li>Sanal altınlar, enerjiler, VIP üyelikler, kalkanlar ve çapa hakları yalnızca oyun içi dijital içerik lisansıdır. Gerçek para veya kripto varlık ile takas edilemez, başka oyunculara satılamaz veya devredilemez.</li>
+                <li>Uygulama içi satın alımlar onaylandığı anda dijital içerik anında kullanıma sunulur. Tüketici hakları ve dijital içerik mevzuatı gereğince anında ifa edilen dijital hizmetlerde <strong>cayma hakkı bulunmaz</strong>.</li>
+                <li>Tüm satın alımlar kesindir ve kural olarak iade yapılmaz. Tüm geri ödeme talepleri münhasıran Google Play ve Apple App Store'un kendi resmi mağaza iade koşullarına tabidir.</li>
+                <li>Kullanıcının kendi rızasıyla hesabını silmesi veya kuralları ihlal ettiği için hesabının kapatılması durumunda hiçbir bakiye veya satın alma bedeli için geri ödeme talep edilemez.</li>
+            </ul>
+
+            <h2>4. Adil Oyun (Fair Play), Hile ve Hesap Kısıtlama</h2>
+            <p>Oyunumuzda tüm oyuncuların adil ve güvenli bir ortamda yarışması esastır. Aşağıdaki eylemler kesinlikle yasaktır:</p>
+            <ul>
+                <li>Hile yazılımları, botlar, otomatik tıklayıcılar veya emülatör makroları kullanmak.</li>
+                <li>Oyun açıklarını (bug/exploit) suiistimal etmek ve haksız avantaj sağlamak.</li>
+                <li>Sunucuya yetkisiz istekler göndermek, tersine mühendislik uygulamak veya APK/kod modifikasyonu yapmak.</li>
+                <li>Diğer oyuncuları taciz etmek, nefret söyleminde bulunmak veya uygunsuz profil adları seçmek.</li>
+            </ul>
+            <p>Zera Game Lab, bu kuralları ihlal eden hesapları önceden bildirimde bulunmaksızın geçici olarak askıya alma, lig puanlarını sıfırlama veya kalıcı olarak kapatma hakkını saklı tutar.</p>
+
+            <h2>5. Sorumluluğun Sınırlandırılması ve Garanti Reddi ("Olduğu Gibi")</h2>
+            <p>Kombino "olduğu gibi" (AS IS) ve "mevcut haliyle" sunulmaktadır. İnternet bağlantı kesintileri, sunucu bakım çalışmaları, veri gecikmeleri veya cihaz donanım uyumsuzluklarından kaynaklanabilecek aksaklıklardan Zera Game Lab sorumlu tutulamaz. Yasaların izin verdiği azami ölçüde, Zera Game Lab'in herhangi bir iddiaya ilişkin azami toplam mali sorumluluğu, kullanıcının son 30 gün içinde oyun içinde yaptığı harcama tutarı ile sınırlıdır.</p>
+
+            <h2>6. Uyuşmazlıkların Çözümü ve Yetkili Mahkeme</h2>
+            <p>Bu koşullar Türkiye Cumhuriyeti kanunlarına tabidir. Ortaya çıkabilecek her türlü uyuşmazlığın çözümünde İstanbul Mahkemeleri ve İcra Daireleri münhasıran yetkilidir.</p>
+
+            <h2>7. Dil Önceliği</h2>
+            <p>Bu Koşullar birden fazla dile çevrilmiş olabilir. Farklı dil sürümleri arasında herhangi bir çelişki veya anlam farklılığı bulunması durumunda yasal olarak İngilizce metin önceliklidir ve bağlayıcıdır.</p>
+        </main>
+
+        <!-- ENGLISH CONTENT -->
+        <main class="lang-en" style="display:none;">
+            <h1>Terms of Service</h1>
+            <p><em>Last Updated: October 18, 2026</em></p>
+
+            <h2>1. Acceptance of Terms and Eligibility</h2>
+            <p>By downloading, installing, or playing Kombino, you agree to be bound by these Terms of Service ("Terms") and all applicable laws. Individuals under the age of 13 may access the Game only with the verifiable consent and supervision of a parent or legal guardian.</p>
+
+            <h2>2. Limited License</h2>
+            <p>Zera Game Lab grants you a personal, non-exclusive, non-transferable, non-sublicensable, revocable license to play the Game for your personal, non-commercial entertainment. All source code, artwork, audio, and branding remain the exclusive intellectual property of Zera Game Lab.</p>
+
+            <h2>3. Virtual Items, Purchases &amp; Strict No-Refund Policy</h2>
+            <div class="danger-box">
+                <strong>Important Legal Notice:</strong> All virtual items (Gold, Energy, VIP, Shields, Checkpoint Tokens) represent a limited digital license, have no real-world monetary value, and are strictly non-refundable.
+            </div>
+            <ul>
+                <li>Virtual items represent a limited license to digital consumable features within the Game. They cannot be redeemed for legal currency, cryptocurrency, or physical goods, and cannot be transferred to third-party accounts.</li>
+                <li>Digital goods are delivered immediately upon purchase confirmation. Pursuant to consumer protection and digital content regulations, statutory withdrawal rights do not apply once digital performance has commenced.</li>
+                <li>All sales are final. Any refund requests are governed exclusively by the terms and refund policies of Apple App Store and Google Play.</li>
+                <li>If you voluntarily delete your profile or account, or if your account is terminated for violations, all virtual items and balances are permanently forfeited without entitlement to any refund.</li>
+            </ul>
+
+            <h2>4. Fair Play, Anti-Cheat, and Account Termination</h2>
+            <p>Competitive integrity is fundamental to Kombino. The following actions are strictly prohibited:</p>
+            <ul>
+                <li>Using unauthorized third-party modification tools, automation bots, or emulator macro scripts.</li>
+                <li>Exploiting software vulnerabilities or bugs for unfair progression advantages.</li>
+                <li>Packet manipulation, server tampering, decompilation, or reverse engineering.</li>
+                <li>Harassment, toxic behavior, or offensive display names.</li>
+            </ul>
+            <p>Zera Game Lab reserves the right to immediately suspend, restrict, or permanently terminate offending accounts without prior notice.</p>
+
+            <h2>5. Disclaimer of Warranties &amp; Limitation of Liability ("AS IS")</h2>
+            <p>The Game is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. Zera Game Lab is not liable for temporary service interruptions, network latency, device incompatibilities, or data desynchronization. To the fullest extent permitted by applicable law, Zera Game Lab's maximum cumulative liability arising out of or related to the Game shall not exceed the amount paid by you in the Game during the thirty (30) days preceding the claim.</p>
+
+            <h2>6. Governing Law and Jurisdiction</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Turkey, without regard to conflict of law principles. Any dispute arising hereunder shall be subject to the exclusive jurisdiction of the courts of Istanbul, Turkey.</p>
+
+            <h2>7. Controlling Language</h2>
+            <p>These Terms may be provided in multiple languages. In the event of any conflict, discrepancy, or ambiguity between translated versions, the English version shall prevail and be legally controlling.</p>
+        </main>
+
+        <footer class="footer">
+            <div>© 2026 Zera Game Lab. All rights reserved.</div>
+            <div>
+                <a href="privacy.html">Gizlilik / Privacy</a> | 
+                <a href="terms.html">Koşullar / Terms</a> | 
+                <a href="delete-account.html">Hesap Silme / Delete</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-tr').forEach(el => el.style.display = lang === 'tr' ? 'block' : 'none');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    localStorage.setItem('kombino_legal_lang', lang);
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('kombino_legal_lang') || 'tr';
+    switchLang(saved);
+});
+</script>
+</body>
+</html>
